@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  formSubmission.xml
+  Structure for storing submissions from FormSample.html
+  Each <submission> element contains fields that match the form inputs.
+  To append new submissions, add additional <submission> elements under <formSubmissions>.
+-->
+<formSubmissions>
+  <submission id="1" timestamp="2026-01-16T00:00:00Z">
+    <FullName></FullName>
+    <Age></Age>
+    <Address></Address>
+    <FavoriteSubjects></FavoriteSubjects>
+    <Password></Password>
+    <Gender></Gender>
+    <Hobbies>
+      <!-- Repeat <hobby> for each selected hobby -->
+      <hobby></hobby>
+    </Hobbies>
+  </submission>
+  <submission id="1768546055364" timestamp="2026-01-16T06:47:35.364Z">
+    <FullName>Test User 2</FullName>
+    <Age>30</Age>
+    <Address>456 Test Ave</Address>
+    <FavoriteSubjects>History</FavoriteSubjects>
+    <Password>secret2</Password>
+    <Gender>female</Gender>
+    <Hobbies>
+      <hobby>System.Object[]</hobby>
+    </Hobbies>
+  </submission>
+  <submission id="1768546262788" timestamp="2026-01-16T06:51:02.788Z">
+    <FullName>Aman Singh Bhadoriya</FullName>
+    <Age>20</Age>
+    <Address>Q NO: 236/2/5 , Housing Colony ,Double story, Chhota Govindpur Jamshedpur</Address>
+    <FavoriteSubjects>DBMS</FavoriteSubjects>
+    <Password>123</Password>
+    <Gender>male</Gender>
+    <Hobbies>
+      <hobby>sports</hobby>
+      <hobby>music</hobby>
+    </Hobbies>
+  </submission>
+</formSubmissions>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    form {
+      width: 360px;
+      margin: 50px auto;
+      padding: 28px 32px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fafafa;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input[type="text"], input[type="password"], input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    fieldset {
+      margin: 12px 0;
+      padding: 8px 12px;
+      border: 1px solid #e6e6e6;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    fieldset legend {
+      font-weight: 600;
+      padding: 0 6px;
+      font-size: 13px;
+    }
+
+    .options label {
+      display: inline-block;
+      margin-right: 12px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 6px;
+      transform: translateY(1px);
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 14px;
+      background-color: #4CAF50;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form action="/submit_form" method="post">
+    <h2>Simple Form</h2>
+    <label for="FullName">Full Name:</label>
+    <input type="text" id="FullName" name="FullName" required>
+
+    <label for="Age">Age:</label>
+    <input type="text" id="Age" name="Age" required pattern="[18-30]{2}">
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="FSubjects">Favorite Subjects:</label>
+    <input type="text" id="FSubjects" name="FSubjects" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <fieldset>
+      <legend>Gender:</legend>
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobbies:</legend>
+      <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+      <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+      <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
